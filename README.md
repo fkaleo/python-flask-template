@@ -143,8 +143,8 @@ def handle(event, context):
                     "title": "No files given",
                     "type": "https://example.com/probs/no-files",
                     "detail": "Ensure that the multipart boundaries match the one in content-type, "
-                                    "and the content-disposition of each file part contains both the name 'files' "
-                                    "as well as a 'filename' attribute"
+                                    "and the content-disposition of each file part contains both the name "
+                                    "'files' as well as a 'filename' attribute"
                 }
             }
 ```
