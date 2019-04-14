@@ -1,4 +1,7 @@
-def handle(event, context):
+from index import Event, Context
+
+
+def handle(event: Event, context: Context):
     # TODO implement
     return {
         "statusCode": 200,
