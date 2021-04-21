@@ -1,4 +1,4 @@
-language: python3-http
+language: python3-http-files
 fprocess: python index.py
 build_options:
   - name: dev
