@@ -4,6 +4,9 @@ FROM python:3.7-slim-buster
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 RUN chmod +x /usr/bin/fwatchdog
 
+# workaround for https://github.com/debuerreotype/docker-debian-artifacts/issues/24
+RUN mkdir -p /usr/share/man/man1
+
 ARG ADDITIONAL_PACKAGE
 # Alternatively use ADD https:// (which will not be cached by Docker builder)
 
